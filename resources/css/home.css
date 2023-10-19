@@ -1,0 +1,272 @@
+/* color fondo y dimensiones del body*/
+body{
+    background-color: white;
+    width: auto;
+    height: auto;
+}
+/* orientacion de titulo*/
+.titulo{
+    position: absolute;
+    top:45px;
+    left:20px;
+    color: black;
+    font-family:Arial, Helvetica, sans-serif;
+}
+/*Encabezado*/
+header{
+    background-color: whitesmoke;
+    width: auto;
+    height: 90px;
+    padding: 1px 1px;
+    margin: 1px;   
+    border-radius: 15px;
+    border: 2px solid grey;
+}
+/*orientacion y tamaño de imagen de logo*/
+#logo{
+    position:absolute;
+    width: 50px;;
+    height:50px;
+    left: 60px;
+    top: 5px;
+}
+ /*Orientacion y tamaño de imagen de login*/
+#login{
+    width:40px;
+    height:40px;
+    position: absolute;
+    top: 20px;
+    right: 30px;
+}
+#barranav{
+    display: none;
+}
+#btmostrar{
+    display:block;
+    position: absolute;
+    top:10px;
+    left:150px;
+}
+#btocultar{
+    display:none;
+    position: absolute;
+    top:10px;
+    left:150px;
+}
+/*nav*/
+nav{
+    width: 40%;
+    margin: auto;
+}
+/*item menu de barra de navegacion*/
+/* menu */
+nav ul {
+    display: flex; 
+    justify-content: center;
+    list-style:none;
+    padding:3px 3px;
+    z-index: 1;
+}
+/* items del menu */
+nav ul li {
+    top: 5px;
+    background-color: whitesmoke;
+    float: left;
+    display: flex;
+    position:relative;
+    justify-content: center;
+    margin:0;
+    padding:0; 
+}
+/* enlaces del menu */
+nav ul a {
+    color: black;
+    font-size:15px;
+    letter-spacing:1px;
+    padding: 15px;
+}
+/* menu desplegable */
+nav ul ul {
+    display:none;
+    position:absolute;
+    top:100%;
+    left:0;
+    padding:0;
+   }
+/* items del menu desplegable */
+.enlaces-menu ul ul li {
+    float:none;
+    width:150px
+}
+/* enlaces de los items del menu desplegable */
+.enlaces-menu ul a {
+    line-height:80%;
+    padding:15px 15px;
+}
+/* items del menu desplegable al pasar el ratón */
+.enlaces-menu li:hover  > ul{
+    display:block;
+}
+/*quita el subrayado de un hipervinculo*/
+.enlaces-menu a {
+    text-decoration: none; 
+ }
+/*Cambio de color menu navegacion*/
+.enlaces-menu a:hover {
+    background-color: rgb(223, 217, 217);
+    border-radius: 15px;
+}
+/*Contenedor buscador*/
+.ctn-buscador{
+    position:absolute;
+    width: 20%;
+    right: 70px;
+    top: 20px;
+    padding: 2px;
+    border: solid 1px whitesmoke;
+}
+/*Contenedor que muestra la busqueda*/
+#listadoBusqueda{
+    width: 72%;
+    text-align:center;
+    border: solid 2px whitesmoke;
+    background-color: white;
+}
+footer {
+    background-color: whitesmoke;
+    width: auto;
+    height: auto;
+    top:2px;
+    margin-bottom: 15px;
+    border-radius: 15px;
+    border: 2px solid gray;
+}
+.agenda{
+        
+        width:auto;
+        height: 50%;
+        border-radius: 15px;
+        padding: 15px;
+        display: block;
+        text-align: center;
+    }    
+.caja{
+    width: 25%;
+    height: 50%;
+    padding: 15px;
+    float: left;
+    border: 2px solid gray;
+    border-radius: 15px;
+}
+.caja>h3{
+    text-align: center;
+}
+.caja>p{
+    text-align: center;
+}
+.redes{
+    width:auto;
+    height: 50%;
+    padding: 15px;
+    display: block;
+    text-align: center;
+}
+.redes>h3{
+    text-align: center;
+}
+.redes>p{
+    text-align: center;
+}
+.redes>a>img:hover{
+    background-color: gray ;
+
+}
+#correo{
+   text-align: center;
+}
+
+h5{
+    color: black;
+    font-family: Arial, Helvetica, sans-serif;
+}
+p{
+    color: black;
+}
+.carousel-inner{
+    margin-top: 3px;
+}
+div>img{
+    width: 100px;
+    height: 300px;
+}
+/* div card*/
+ .card{
+    width: auto;
+    height:400px;
+    text-align: block; 
+    padding: 5px 0;
+    display:flex;
+    align-items: baseline; 
+    flex-wrap: wrap;
+    align-content: space-around;
+}  
+.creartarjeta{
+    box-shadow:0 0 5px gray ;
+    border-radius: 15px; 
+    margin-top: 5px;
+    padding: 5px;
+}
+.creartarjeta>h3{
+    text-align: center;
+}
+.creartarjeta>img{
+    width: 250px;
+    height: 250px;
+    border: 5px solid;
+    border-color: aliceblue;
+           
+}
+ .creartarjeta>a{
+    display: flex;
+    justify-content: center;
+}  
+.noticia{
+    text-align: left;
+    font-size: 30px;
+    background-color: whitesmoke;
+    margin-top: 3px;
+    border-radius: 15px;
+}
+p{
+    display: flex;
+    justify-content: center;
+}
+.conteventos{
+    width: auto;
+    height: 520px;
+    display:flex;
+    justify-content: left;
+    align-items: center;
+    background-color: beige;
+    border-radius: 15px;
+    margin-bottom: 5px;
+}
+.conteventos>h3{
+    font-size: 50px;
+    box-shadow: 3px;
+}
+.evento>p{
+    font-size: 25px;
+    text-align: center;
+    margin: 15px;
+    padding: 10px;
+    border-radius: 15px;
+}
+.evento>p:hover{
+    background-color: whitesmoke;
+    border: 2px solid gray
+}
+
+
+
+  
