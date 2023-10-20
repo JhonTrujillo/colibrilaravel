@@ -1,0 +1,49 @@
+/* Formulario login.html */
+/*Contenedor div*/
+.formlogin{
+    display: flex;
+    width: auto;
+    height: 900px;
+}
+form{
+    position: absolute;
+    top: 300px;
+    left: 35%;
+    width: 30%;
+    text-align: center;
+}
+.formlogin img{
+    width: 30%;
+    height: 30%;
+    padding-bottom: 30px;
+}
+.formlogin input{
+    width: 80%;
+    margin-bottom: 10px;
+    padding: 10px;
+    border-radius: 15px;
+    border-color: whitesmoke;
+    font-size: 15px;
+}
+.formlogin input:focus{
+    outline: none;
+}
+form button{
+    background-color: whitesmoke;
+    padding: 10px;
+    width: 70%;
+    border-radius: 15px;
+    box-shadow: 5px 5px 5px gray;
+    font-size: 20px;
+}
+form button:hover{
+    color: chocolate;
+    width: 75%;
+}
+.recordarcontraseña{ 
+    padding-top: 15px;
+    position: absolute;
+    margin-bottom: 15px;
+    margin-left: 30%;
+    text-align: center;
+}

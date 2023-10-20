@@ -17,13 +17,13 @@
   <header id="arriba">
     <!-- Titulo logo login   -->
     <h3 class="titulo">Liceo Colibris</h3>
-    <a href="index.html" id="imglogo"><img id="logo" src="images/logo.png" alt="logo"></a>
-    <a href="login.html" id="imglogin"><img id="login" src="images/login.png" alt="login"></a>
+    <a href="{{url('home')}}" id="imglogo"><img id="logo" src="images/logo.png" alt="logo"></a>
+    <a href="{{url('login')}}" id="imglogin"><img id="login" src="images/login.png" alt="login"></a>
     <!-- Barra de navegacion menu desplegable     -->
     <nav id="barranav">
       <ul class="enlaces-menu">
-        <li><a href="quienessomos.html">Quienes Somos</a></li>
-        <li><a href="contacto.html">Contactenos</a></li>
+        <li><a href="{{url('quienessomos')}}">Quienes Somos</a></li>
+        <li><a href="{{url('contactenos')}}">Contactenos</a></li>
         <li><a href="#">Horarios</a>
           <ul>
             <li><a href="horarios.html">Horario Primaria</a></li>
@@ -47,6 +47,12 @@
     </div>
   </header>
   @yield("contenido")
+  @yield("formulariocontactenos")
+  @yield("quienessomos")
+  @yield("login")
+  @yield("cursos")
+  @yield("construccion")
+
   <footer>
     <div class="agenda">
       <h3>¿Listo para comenzar tu gira escolar?</h3>

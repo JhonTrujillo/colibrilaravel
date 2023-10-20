@@ -4,19 +4,19 @@ const programas = [
         titulo:'Primaria',
         imagen:'images/primaria.jpg',
         descripcion:'Jardin a Quinto',
-        enlace:'primaria.html',
+        enlace:'primaria',
     },
     {
         titulo:'Secundaria',
         imagen:'images/secundaria.avif',
         descripcion:'Sexto a Once',
-        enlace:'secundaria.html',
+        enlace:'secundaria',
     },
     {
         titulo:'Cursos',
         imagen:'images/clasesvacacionales.jpg',
         descripcion:'Cursos - Refuerzo',
-        enlace:'cursos.html',
+        enlace:'cursos',
     }
 ];
 

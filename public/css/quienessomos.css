@@ -1,0 +1,25 @@
+/*Estilos Css para quienessomos.html*/
+.mision{
+    width: 50%;
+    text-align: center;
+    overflow: auto;
+    float: left;
+    padding: 10px;
+    
+}
+.vision{
+    text-align: center;
+    margin-top: 10px;
+    padding: 10px;
+    
+}
+.valores{
+    width: 70%;
+    text-align: center;
+    margin: auto;
+    
+}
+div>img{
+    height: 150px;
+    width: 200px;
+}
