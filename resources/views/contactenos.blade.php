@@ -3,8 +3,9 @@
 <link rel="stylesheet" href="{{asset('css/contactenos.css')}}">
 
 <h3>Contactame</h3>
-        <form action="" class="formulario">
-            <!-- Grupo Nombres -->
+        <form action="{{url('contactenos')}}" method="post" class="formulario">
+        @csrf
+        <!-- Grupo Nombres -->
             <div class="formulario_grupo" id="grupo_nombres">
                 <label for="nombres" class="formulario_label">Nombres</label>
                 <div class="formulario_grupo_input">

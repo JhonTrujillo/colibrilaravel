@@ -9,7 +9,15 @@ class EjemplosController extends Controller
 {
     public function ejemplo(){
         // dd("Hola Soy el ejemplo");
-        $eje = new Ejemplo();
-        $eje->ejemploDesdeElModelo();
+        // $eje = new Ejemplo();
+        // $eje->ejemploDesdeElModelo();
+        return view("ejemplo");
     }
+    public function CrearEjemplo(Request $request){
+        // dd($request->all());
+
+        $eje = new Ejemplo();
+        $eje->guardarBd($request);
+    }
+
 }

@@ -26,3 +26,7 @@ Route::get("/construccion","App\Http\Controllers\ConstruccionController@construc
 Route::get("/primaria","App\Http\Controllers\ConstruccionController@construccion");
 Route::get("/secundaria","App\Http\Controllers\ConstruccionController@construccion");
 
+
+Route::post("/ejemplo","App\Http\Controllers\EjemplosController@CrearEjemplo");
+Route::post("/contactenos","App\Http\Controllers\ContactenosController@Crearcontactenos");
+
