@@ -11,6 +11,7 @@
     integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
     <link rel="stylesheet" href="{{asset('css/home.css')}}">
   <script src="https://kit.fontawesome.com/e425e7a0eb.js" crossorigin="anonymous"></script>
+  @yield("header")
 </head>
 <body>
   <!-- los styles de header, footer se encuentran en main.css -->
@@ -47,11 +48,12 @@
     </div>
   </header>
   @yield("contenido")
-  @yield("formulariocontactenos")
+  <!-- @yield("formulariocontactenos")
   @yield("quienessomos")
   @yield("login")
   @yield("cursos")
-  @yield("construccion")
+  @yield("construccion") -->
+
 
   <footer>
     <div class="agenda">

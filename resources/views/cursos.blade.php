@@ -1,5 +1,5 @@
 @extends("app")
-@section("quienessomos")
+@section("contenido")
 
 <link rel="stylesheet" href="{{asset('css/cursos.css')}}">
 

@@ -1,10 +1,7 @@
 @extends("app")
-@section("construccion")
+@section("contenido")
 
-<!-- <link rel="stylesheet" href="{{asset('css/construccion.css')}}">
-<div class="enconstruccion">
-    <img src="images/construccion.png" alt="construccion">
-</div> -->
+@include("componentes.construccion")
 
 
 

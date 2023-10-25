@@ -1,5 +1,5 @@
 @extends("app")
-@section("formulariocontactenos")
+@section("contenido")
 <link rel="stylesheet" href="{{asset('css/contactenos.css')}}">
 
 <h3>Contactame</h3>
@@ -65,7 +65,7 @@
             <div class="formulario_grupo" id="grupo_observaciones">
                 <label for="observaciones" class="formulario_label">observaciones</label>
                 <div class="formulario_grupo_input">
-                    <textarea name="" id="observaciones" cols="75" rows="5"></textarea>
+                    <textarea name="observaciones" id="observaciones" cols="75" rows="5"></textarea>
                     <i class="formulario_validacion_estado fa-regular fa-circle-xmark"></i>
                     <p class="formulario_input_error" id="error_observaciones">Cantidad maxima 200 caracteres</p>
                 </div>

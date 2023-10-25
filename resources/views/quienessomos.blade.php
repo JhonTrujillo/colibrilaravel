@@ -1,5 +1,8 @@
 @extends("app")
-@section("quienessomos")
+@section("header") 
+
+@endsection 
+@section("contenido")
 
 <link rel="stylesheet" href="{{asset('css/quienessomos.css')}}">
 
@@ -24,4 +27,5 @@
             </p> 
             </div>
     </section>
- @endsection   
+ @endsection  
+  

@@ -1,5 +1,5 @@
 @extends("app")
-@section("login")
+@section("contenido")
 
 <link rel="stylesheet" href="{{asset('css/login.css')}}">
 

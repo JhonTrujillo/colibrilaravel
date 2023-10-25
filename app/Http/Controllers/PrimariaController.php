@@ -10,6 +10,6 @@ class PrimariaController extends Controller
     //      dd("Hola Soy Construccion");
     //    }
     public function primaria(){
-    return view("construccion");
+    return view("primaria");
     }
 }

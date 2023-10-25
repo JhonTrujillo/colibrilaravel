@@ -23,8 +23,8 @@ Route::get("/quienessomos","App\Http\Controllers\QuienessomosController@quienes"
 Route::get("/login","App\Http\Controllers\LoginController@login");
 Route::get("/cursos","App\Http\Controllers\CursosController@cursos");
 Route::get("/construccion","App\Http\Controllers\ConstruccionController@construccion");
-Route::get("/primaria","App\Http\Controllers\ConstruccionController@construccion");
-Route::get("/secundaria","App\Http\Controllers\ConstruccionController@construccion");
+Route::get("/primaria","App\Http\Controllers\PrimariaController@primaria");
+Route::get("/secundaria","App\Http\Controllers\SecundariaController@secundaria");
 
 
 Route::post("/ejemplo","App\Http\Controllers\EjemplosController@CrearEjemplo");
