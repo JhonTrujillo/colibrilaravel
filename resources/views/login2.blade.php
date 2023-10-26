@@ -4,8 +4,6 @@
 @endsection
 @section("contenido")
 
-
-
 <section>
       <div class="formlogin">
         <form action="">

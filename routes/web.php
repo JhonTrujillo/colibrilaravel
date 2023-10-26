@@ -17,10 +17,10 @@ Route::get('/', function () {
     return view('welcome');
 });
 Route::get("/ejemplo","App\Http\Controllers\EjemplosController@ejemplo");
-Route::get("/home","App\Http\Controllers\HomeController@home");
+Route::get("/home2","App\Http\Controllers\Home2Controller@home2");
 Route::get("/contactenos","App\Http\Controllers\ContactenosController@contactenos");
 Route::get("/quienessomos","App\Http\Controllers\QuienessomosController@quienes");
-Route::get("/login","App\Http\Controllers\LoginController@login");
+Route::get("/login2","App\Http\Controllers\Login2Controller@login2");
 Route::get("/cursos","App\Http\Controllers\CursosController@cursos");
 Route::get("/construccion","App\Http\Controllers\ConstruccionController@construccion");
 Route::get("/primaria","App\Http\Controllers\PrimariaController@primaria");
@@ -30,3 +30,15 @@ Route::get("/secundaria","App\Http\Controllers\SecundariaController@secundaria")
 Route::post("/ejemplo","App\Http\Controllers\EjemplosController@CrearEjemplo");
 Route::post("/contactenos","App\Http\Controllers\ContactenosController@Crearcontactenos");
 
+
+Auth::routes();
+
+Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
+
+Auth::routes();
+
+Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
+
+Auth::routes();
+
+Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');

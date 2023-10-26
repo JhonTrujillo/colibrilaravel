@@ -18,7 +18,7 @@
   <header id="arriba">
     <!-- Titulo logo login   -->
     <h3 class="titulo">Liceo Colibris</h3>
-    <a href="{{url('home')}}" id="imglogo"><img id="logo" src="images/logo.png" alt="logo"></a>
+    <a href="{{url('home2')}}" id="imglogo"><img id="logo" src="images/logo.png" alt="logo"></a>
     <a href="{{url('login')}}" id="imglogin"><img id="login" src="images/login.png" alt="login"></a>
     <!-- Barra de navegacion menu desplegable     -->
     <nav id="barranav">
