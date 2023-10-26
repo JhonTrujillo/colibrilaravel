@@ -1,7 +1,8 @@
 @extends("app")
-@section("contenido")
+@section("header")
 <link rel="stylesheet" href="{{asset('css/contactenos.css')}}">
-
+@endsection
+@section("contenido")
 <h3>Contactame</h3>
         <form action="{{url('contactenos')}}" method="post" class="formulario">
         @csrf

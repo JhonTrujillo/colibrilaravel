@@ -1,7 +1,10 @@
 @extends("app")
+@section("header")
+<link rel="stylesheet" href="{{asset('css/cursos.css')}}">
+@endsection
 @section("contenido")
 
-<link rel="stylesheet" href="{{asset('css/cursos.css')}}">
+
 
 <div class="card" id="contcursos"></div>
 

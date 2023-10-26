@@ -1,7 +1,10 @@
 @extends("app")
+@section("header")
+<link rel="stylesheet" href="{{asset('css/login.css')}}">
+@endsection
 @section("contenido")
 
-<link rel="stylesheet" href="{{asset('css/login.css')}}">
+
 
 <section>
       <div class="formlogin">
