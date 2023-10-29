@@ -3,7 +3,9 @@
 <link rel="stylesheet" href="{{asset('css/contactenos.css')}}">
 @endsection
 @section("contenido")
+
 <h3>Contactame</h3>
+{{-- @dd("$datos") --}}
         <form action="{{url('contactenos')}}" method="post" class="formulario">
         @csrf
         <!-- Grupo Nombres -->
@@ -15,7 +17,6 @@
                     <p class="formulario_input_error" id="error_nombres">Los nombre tienes un maximo de 60 caracteres</p>
                 </div>
                  </div>
-
             <!-- Grupo Apellido -->
             <div class="formulario_grupo" id="grupo_apellidos">
                 <label for="apellidos" class="formulario_label">Apellidos</label>
@@ -25,8 +26,6 @@
                     <p class="formulario_input_error" id="error_apellidos">Los apellidos tiene un maximo de 60 caracteres</p>
                 </div>
             </div>
-
-
             <!-- Grupo Identificacion -->
             <div class="formulario_grupo" id="grupo_identificacion">
                 <label for="identificacion" class="formulario_label">Cedula</label>
@@ -37,8 +36,6 @@
                     <p class="formulario_input_error">usar solo numeros</p>
                 </div>
             </div>
-
-
             <!-- Grupo Correo -->
             <div class="formulario_grupo" id="grupo_correo">
                 <label for="correo" class="formulario_label">Correo</label>
@@ -50,7 +47,6 @@
                         guiones bajo.</p>
                 </div>
             </div>
-
             <!-- Grupo Usuario -->
             <div class="formulario_grupo" id="grupo_usuario">
                 <label for="usuario" class="formulario_label">Usuario</label>
@@ -61,7 +57,6 @@
                         numeros, letras, guion bajo</p>
                 </div>
             </div>
-
             <!-- Grupo Observaciones -->
             <div class="formulario_grupo" id="grupo_observaciones">
                 <label for="observaciones" class="formulario_label">observaciones</label>
@@ -82,4 +77,39 @@
                 <!-- <i class=" fa-solid fa-triangle-exclamation"></i><br>Error: </br> -->
             </div>
         </form>
+        <hr>
+        <h3>Listado contactos</h3>
+        <table >
+            <tr>
+                <td>ID</td>
+                <td>Nombres</td>
+                <td>Apellidos</td>
+                <td>Cedula</td>
+                <td>Correo</td>
+                <td>Usuario</td>
+                <td>Observaciones</td>
+                <td>Fecha Creacion</td>
+                <td>Fecha Actualizacion</td>
+                <td>Opciones</td>
+            </tr>
+            @foreach ($datos as $dato)
+             <tr>
+                <td>{{$dato->id}}</td>
+                <td>{{$dato->nombres}}</td>
+                <td>{{$dato->apellidos}}</td>
+                <td>{{$dato->cedula}}</td>
+                <td>{{$dato->correo}}</td>
+                <td>{{$dato->usuario}}</td>
+                <td>{{$dato->observaciones}}</td>
+                <td>{{$dato->created_at}}</td>
+                <td>{{$dato->updated_at}}</td>
+                <td><a href="{{url("/contactenos/" . $dato->id)}}" target="blank">Ver registro</a></td>                
+                <form action="{{url("/contactenos/" . $dato->id."/eliminar")}}" method="post">
+                    @method("delete")
+                    @csrf
+                    <input type="submit" value="Eliminar">
+                </form>
+            </tr>
+            @endforeach
+        </table>
 @endsection        

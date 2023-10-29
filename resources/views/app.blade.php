@@ -25,7 +25,7 @@
       <ul class="enlaces-menu">
         <li><a href="{{url('quienessomos')}}">Quienes Somos</a></li>
         <li><a href="{{url('contactenos')}}">Contactenos</a></li>
-        <li><a href="#">Horarios</a>
+        <li><a href="">Horarios</a>
           <ul>
             <li><a href="horarios.html">Horario Primaria</a></li>
             <li><a href="horarios.html">Horario Primaria</a></li>
@@ -48,13 +48,6 @@
     </div>
   </header>
   @yield("contenido")
-  <!-- @yield("formulariocontactenos")
-  @yield("quienessomos")
-  @yield("login")
-  @yield("cursos")
-  @yield("construccion") -->
-
-
   <footer>
     <div class="agenda">
       <h3>¿Listo para comenzar tu gira escolar?</h3>
