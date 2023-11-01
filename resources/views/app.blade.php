@@ -18,8 +18,40 @@
   <header id="arriba">
     <!-- Titulo logo login   -->
     <h3 class="titulo">Liceo Colibris</h3>
-    <a href="{{url('home2')}}" id="imglogo"><img id="logo" src="images/logo.png" alt="logo"></a>
-    <a href="{{url('login')}}" id="imglogin"><img id="login" src="images/login.png" alt="login"></a>
+    <a href="{{url('home2')}}" id="imglogo"><img id="logo" src="{{asset('images/logo.png')}}" alt="logo"></a>
+     <!-- Authentication Links
+     @guest
+                            @if (Route::has('login'))
+                                <li class="nav-item">
+                                    <a class="nav-link" href="{{ route('login') }}">{{ __('Login') }}</a>
+                                </li>
+                            @endif
+
+                            @if (Route::has('register'))
+                                <li class="nav-item">
+                                    <a class="nav-link" href="{{ route('register') }}">{{ __('Register') }}</a>
+                                </li>
+                            @endif
+                        @else
+                            <li class="nav-item dropdown">
+                                <a id="navbarDropdown" class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false" v-pre>
+                                    {{ Auth::user()->name }}
+                                </a>
+
+                                <div class="dropdown-menu dropdown-menu-end" aria-labelledby="navbarDropdown">
+                                    <a class="dropdown-item" href="{{ route('logout') }}"
+                                       onclick="event.preventDefault();
+                                                     document.getElementById('logout-form').submit();">
+                                        {{ __('Logout') }}
+                                    </a>
+
+                                    <form id="logout-form" action="{{ route('logout') }}" method="POST" class="d-none">
+                                        @csrf
+                                    </form>
+                                </div>
+                            </li>
+                        @endguest -->
+  <a href="{{url('login')}}" id="imglogin"><img id="login" src="{{asset('images/login.png')}}"></a>
     <!-- Barra de navegacion menu desplegable     -->
     <nav id="barranav">
       <ul class="enlaces-menu">
@@ -80,16 +112,16 @@
     <div class="redes">
       <h3 id="siguenos">Siguenos</h3>
       <a href="https://www.instagram.com/" target="_blank">
-        <img id="instagram" src="images/instagram.png" alt="logo">
+        <img id="instagram" src="{{asset('images/instagram.png')}}" alt="logo">
       </a>
       <a href="https://www.facebook.com/" target="_blank">
-        <img id="facebook" src="images/facebook.png" alt="logo">
+        <img id="facebook" src="{{asset('images/facebook.png')}}" alt="logo">
       </a>
       <a href="https://www.twitter.com/" target="_blank">
-        <img id="twitter" src="images/twitter.png" alt="logo">
+        <img id="twitter" src="{{asset('images/twitter.png')}}" alt="logo">
       </a>
       <a href="#arriba" target="" id="subir">
-        <img src="images/arriba.png" alt="arriba" height="50px" width="50px">
+        <img src="{{asset('images/arriba.png')}}" alt="arriba" height="50px" width="50px">
       </a>
       <address id="correo">Email: Liceocolibris@edu.com</address>
       <p>Copyrigth &copy; Liceo los Colibris por Luxur90</p>

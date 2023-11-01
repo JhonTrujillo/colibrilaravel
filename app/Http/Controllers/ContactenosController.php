@@ -45,5 +45,6 @@ class ContactenosController extends Controller
     // dd($request->all());
          $contacto = new contactenos();
          $contacto->guardarBd($request);
+         return redirect()->back();
     }
 }

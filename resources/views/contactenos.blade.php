@@ -104,11 +104,11 @@
                 <td>{{$dato->created_at}}</td>
                 <td>{{$dato->updated_at}}</td>
                 <td><a href="{{url("/contactenos/" . $dato->id)}}" target="blank">Ver registro</a></td>                
-                <form action="{{url("/contactenos/" . $dato->id."/eliminar")}}" method="post">
+                <td><form action="{{url("/contactenos/" . $dato->id."/eliminar")}}" method="post">
                     @method("delete")
                     @csrf
-                    <input type="submit" value="Eliminar">
-                </form>
+                    <input type="submit" value="Eliminar" id="btneliminar">
+                </form></td>
             </tr>
             @endforeach
         </table>
