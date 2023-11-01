@@ -17,7 +17,7 @@ class Contactenos{
              'observaciones'=> $datos->observaciones
         ]);
         // dd($contactenos);
-        return $contactenos;
+        
         
     }
 
