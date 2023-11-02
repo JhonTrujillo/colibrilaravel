@@ -56,7 +56,7 @@
     <nav id="barranav">
       <ul class="enlaces-menu">
         <li><a href="{{url('quienessomos')}}">Quienes Somos</a></li>
-        <li><a href="{{url('contactenos')}}">Contactenos</a></li>
+        <li><a href="{{route("contactenos.create")}}">Contactenos</a></li>
         <li><a href="">Horarios</a>
           <ul>
             <li><a href="horarios.html">Horario Primaria</a></li>

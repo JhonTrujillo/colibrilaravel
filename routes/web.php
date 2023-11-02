@@ -18,16 +18,18 @@ Route::get('/', function () {
 });
 Route::get("/ejemplo","App\Http\Controllers\EjemplosController@ejemplo");
 Route::get("/home2","App\Http\Controllers\Home2Controller@home2");
-Route::get("/contactenos","App\Http\Controllers\ContactenosController@contactenos");
-Route::get("/contactenos/{id?}","App\Http\Controllers\ContactenosController@vercontactenos");
-Route::put("/contactenos/{id?}","App\Http\Controllers\ContactenosController@editarcontactenos");
-Route::delete("/contactenos/{id?}/eliminar","App\Http\Controllers\ContactenosController@eliminarContactenos");
+// Route::get("/contactenos","App\Http\Controllers\ContactenosController@contactenos");
+// Route::get("/contactenos/{id?}","App\Http\Controllers\ContactenosController@vercontactenos");
+// Route::put("/contactenos/{id?}","App\Http\Controllers\ContactenosController@editarcontactenos");
+// Route::delete("/contactenos/{id?}/eliminar","App\Http\Controllers\ContactenosController@eliminarContactenos");
 Route::get("/quienessomos","App\Http\Controllers\QuienessomosController@quienes");
 Route::get("/login2","App\Http\Controllers\Login2Controller@login2");
 Route::get("/cursos","App\Http\Controllers\CursosController@cursos");
 Route::get("/construccion","App\Http\Controllers\ConstruccionController@construccion");
 Route::get("/primaria","App\Http\Controllers\PrimariaController@primaria");
 Route::get("/secundaria","App\Http\Controllers\SecundariaController@secundaria");
+
+Route::resource('contactenos', "App\Http\Controllers\ContactenosControllerResources");
 
 
 Route::post("/ejemplo","App\Http\Controllers\EjemplosController@CrearEjemplo");

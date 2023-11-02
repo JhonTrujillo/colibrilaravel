@@ -24,7 +24,7 @@ class ContactenosController extends Controller
     public function editarcontactenos(Request $request, $id){
             // dd($request->all(), $id);
             $contacto = new contactenos();
-            $resultado = $contacto->actualizarContactenos($request, $id);
+            $resultado = $this->actualizarContactenos($request, $id);
             // dd($resultado);
             $mensaje = "No se pudo actualizar";
             if($resultado == "1"){
