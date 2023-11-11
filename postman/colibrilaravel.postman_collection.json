@@ -1,0 +1,164 @@
+{
+	"info": {
+		"_postman_id": "7e979b4f-bc0b-49e8-9683-d75aaa746755",
+		"name": "colibrilaravel",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "30958173"
+	},
+	"item": [
+		{
+			"name": "listarcontactenos",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "http://127.0.0.1:8000/api/contactenos",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"contactenos"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "crearRegistros",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"nombres\": \"Pepito 6 \",\r\n    \"apellidos\":\"Perez 3\",\r\n    \"identificacion\": \"1110500632\",\r\n    \"correo\":\"pepitoperez2001@gmail.com\",\r\n    \"usuario\":\"pepitoperez90\",\r\n    \"observaciones\":\"Hola Soy pepito perez\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://127.0.0.1:8000/api/contactenos",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"contactenos"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "actualizarRegistro",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n        \"nombres\": \"Ana Maria\",\r\n        \"apellidos\": \"Cortes Fierro\",\r\n        \"identificacion\": 1110523561,\r\n        \"correo\": \"sofia@gmail.com\",\r\n        \"usuario\": \"sofia96\",\r\n        \"observaciones\": \"Hola soy sofia 2\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://127.0.0.1:8000/api/contactenos/12",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"contactenos",
+						"12"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "eliminarRegistro",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "http://127.0.0.1:8000/api/contactenos/19",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"contactenos",
+						"19"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "buscarRegistro",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "http://127.0.0.1:8000/api/contactenos/12",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"contactenos",
+						"12"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
